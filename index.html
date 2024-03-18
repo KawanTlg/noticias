@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -11,34 +12,58 @@
     <script src="./script.js" defer></script>
     <title>W. Notícias</title>
 </head>
-<body class="menu-open">
 <body>
-    <header class="header-mobile">
+    <header>
         <img src="./assets/images/logo.svg" alt="Logo do site de notícias W.">
 
         <button>
             <img src="./assets/images/icon-menu.svg" alt="ícone do menu hamburger">
         </button>
-        <nav>
+
+
+        <nav class="mobile">
             <button>
                 <img src="./assets/images/icon-menu-close.svg" alt="icone de x para fechar o menu">
             </button>
+            <nav class="mobile">
+                <button>
+                    <img src="./assets/images/icon-menu-close.svg" alt="ícone de X para fechar o menu">
+                </button>
+
+               <a href="#">Home</a> 
+               <a href="#">Novo</a> 
+               <a href="#">Popular</a> 
+               <a href="#">Trending</a> 
+               <a href="#">Categorias</a> 
+            </nav>    
+
+        <nav class="desktop">
             <a href="#">Home</a>
             <a href="#">Novo</a>
             <a href="#">Popular</a>
             <a href="#">Trending</a>
             <a href="#">Categorias</a>
         </nav>
+
+        
     </header>
-    <main>
+
+
+  <main>
         <section class="primeira-secao">
-            <img src="./assets/images/image-web-3-mobile.jpg" alt="ícone de puzzle colorido">
+            <picture>
+                <source media="(min-width: 700px)" srcset="./assets/images/image-web-3-desktop.jpg">
+                <img src="./assets/images/image-web-3-desktop.jpg" alt="ícone de puzzle colorido">
+            </picture>
+
             <h1>O futuro brilhante da Web 3.0?</h1>
             <p>Nós mergulhamos na próxima evolução da web que afirma devolver o poder das plataformas para as mãos das pessoas. Mas será que ela realmente está cumprindo sua promessa?</p>
             <button>Ler Mais</button>
         </section>
+
         <section class="segunda-secao">
             <h2>Novo</h2>
+
             <div class="margin-border-padding">
                 <h3>Hidrogênio VS Carros Elétricos</h3>
                 <p>Os carros movidos a hifrogênio alguma vez alcançaram os veículos elétricos?</p>
@@ -52,15 +77,18 @@
                 <p>O financiamento privado por empresas de capital de risco caiu em 50%</p>
             </div>
         </section>
+
         <section class="terceira-secao">
             <div>
                 <img src="./assets/images/image-retro-pcs.jpg" alt="imagens de computadores antigos">
+
                 <div>
                     <strong>01</strong>
                     <h2>Revivendo PCs antigos</h2>
                     <p>E se PCs antigos pudessem receber peças modernas?</p>
                 </div>
             </div>
+
             <div>
                 <img src="./assets/images/image-top-laptops.jpg" alt="imagem de laptops">
                 <div>
@@ -69,6 +97,7 @@
                     <p>Nossas melhores escolhas para diversas necessidades.</p>
                 </div>
             </div>
+
             <div>
                 <img src="./assets/images/image-gaming-growth.jpg" alt="imagem de um controle de videogame">
                 <div>
